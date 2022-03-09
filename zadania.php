@@ -25,6 +25,16 @@
 
 </html>
 <?php
+
+@$tekst = $_GET['tekst'];
+@$ilosc = $_GET['ilosc'];
+
+
+for ($i = 0; $i < $ilosc; $i++) {
+
+    echo $tekst . "<br>";
+}
+
 @$liczba1 = $_POST['liczba1'];
 @$liczba2 = $_POST['liczba2'];
 echo 'Wynik działania ' . $liczba1 . ' ' . $_POST['znak'] . ' ' . $liczba2 . ' wynosi ';
@@ -43,14 +53,5 @@ switch ($_POST['znak']) {
         break;
 }
 
-@$tekst = $_GET['tekst'];
-@$ilosc = $_GET['ilosc'];
 
-if ($ilosc = 0 and $tekst = "") {
-    echo "błąd";
-}
-for ($i = 0; $i < $ilosc; $i++) {
-
-    echo $tekst . "<br>";
-}
 ?>
